@@ -10,7 +10,10 @@ public class CONTENT_PlayerNetwork : NetworkBehaviour
 
         foreach (var item in transform)
         {
-            Destroy(((Transform)item).gameObject);
+//            if (((Transform)item).name != "trail")
+//            {
+                Destroy(((Transform)item).gameObject);
+//            }
         }
     }
 
@@ -22,11 +25,4 @@ public class CONTENT_PlayerNetwork : NetworkBehaviour
             transform.rotation = Camera.main.transform.rotation;
         }
     }
-
-//	// Use this for initialization
-//	public void Awake () 
-//    {
-//        Debug.Log("start player");
-//	
-//	}
 }

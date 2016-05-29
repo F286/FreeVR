@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.Networking;
 
-public class CONTENT_NetworkHud : MonoBehaviour 
+public class CONTENT_NetworkHud : NetworkManager 
 {
 //    void Start()
 //    {
@@ -20,13 +20,27 @@ public class CONTENT_NetworkHud : MonoBehaviour
 ////        Debug.Log("The trigger was pulled!");
 //    }
 //
-    public void Update()
+    public override void OnStartClient(NetworkClient client)
     {
-        if (Time.time > 60)
+        base.OnStartClient(client);
+
+
+        GetComponent<NetworkManagerHUD>().showGUI = false;
+    }
+    public void Start()
+    {
+        if (Application.isEditor)
         {
-            GetComponent<NetworkManagerHUD>().showGUI = false;
+            GetComponent<NetworkManager>().StartHost();
         }
     }
+//    public void Update()
+//    {
+//        if (Time.time > 60)
+//        {
+//            GetComponent<NetworkManagerHUD>().showGUI = false;
+//        }
+//    }
 
     float native_width = 640;
     float native_height = 480;
