@@ -45,8 +45,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CONTENT_NetworkHud.cs" />
+     <Compile Include="Assets\Content\CONTENT_Car.cs" />
      <Compile Include="Assets\Content\CONTENT_Drone.cs" />
+     <Compile Include="Assets\Content\CONTENT_NetworkHud.cs" />
      <Compile Include="Assets\Content\CONTENT_NetworkManager.cs" />
      <Compile Include="Assets\Content\CONTENT_PlayerNetwork.cs" />
      <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDebugInfo.cs" />
