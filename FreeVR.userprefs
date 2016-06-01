@@ -1,8 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GoogleVR/Scripts/Audio/GvrAudio.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Content/CONTENT_Drone.cs">
     <Files>
+      <File FileName="Assets/Content/CONTENT_PlayerNetwork.cs" Line="21" Column="6" />
       <File FileName="Assets/GoogleVR/Scripts/Audio/GvrAudio.cs" Line="58" Column="68" />
+      <File FileName="Assets/Content/CONTENT_NetworkManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/CONTENT_NetworkHud.cs" Line="37" Column="22" />
+      <File FileName="Assets/Content/CONTENT_Drone.cs" Line="57" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
